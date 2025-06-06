@@ -1,16 +1,27 @@
 {
-  "name": "firstReactApp",
+  "name": "moviedbsearch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
+  "homepage": "http://moviesearchdb.tonythecomputerwhisperer.me",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
     "appwrite": "^18.1.1",
     "react-use": "^17.6.0",
-    "tailwindcss": "^4.1.7"
+    "tailwindcss": "^4.1.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^5.2.0"
   }
 }
